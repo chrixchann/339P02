@@ -275,21 +275,21 @@
                     <p>$6.00</p>
                     <hr>
                     <h3>Size choice</h3>
-                    <label class="carrier">
-                        <input type="radio" name="carrier">12 oz
+                    <label class="size">
+                        <input type="radio" name="size-12">12 oz
                         <span class="checkmark"></span>
                     </label><br>
-                    <label class="carrier">
-                        <input type="radio" name="carrier">16 oz
+                    <label class="size">
+                        <input type="radio" name="size-16">16 oz
                         <span class="checkmark"></span>
                     </label><br>
                     <h3>Milk choice</h3>
-                    <label class="carrier">
-                        <input type="radio" name="carrier">Whole Milk
+                    <label class="milk">
+                        <input type="radio" name="milk-whole">Whole Milk
                         <span class="checkmark"></span>
                     </label><br>
-                    <label class="carrier">
-                        <input type="radio" name="carrier">Skim Milk
+                    <label class="milk">
+                        <input type="radio" name="milk-skim">Skim Milk
                         <span class="checkmark"></span>
                     </label><br>
                     <button class="button-nav" onclick="location.href='product.html';" value="back to product">Order Now</button>
@@ -305,58 +305,60 @@
             <p>cafe@hive.city</p>
             <section class="form">
                 <form action="index.html">
-                <label><b>First Name</b></label>
-                <input type="search" placeholder="First Name">
-                <label><b>Last Name</b></label>
-                <input type="search" placeholder="Last Name">
-                <label><b>Email</b></label>
-                <input type="search" placeholder="Email">
-                <label><b>Subject</b></label>
-                <input type="search" placeholder="Subject">
-                <label><b>Message</b></label>
-                <input type="search" placeholder="Message">
-                <button class="button-nav" onclick="location.href='product.html';" value="back to product">Submit</button>
+                    <label><b>First Name</b></label>
+                    <input type="contact-text" name="First Name" value="First Name" placeholder="First Name">
+                    <label><b>Last Name</b></label>
+                    <input type="contact-text" name="lastname" value="Last Name" placeholder="Last Name">
+                    <label><b>Email</b></label>
+                    <input type="contact-text" placeholder="Email">
+                    <label><b>Subject</b></label>
+                    <input type="contact-text" placeholder="Subject">
+                    <label><b>Message</b></label>
+                    <input type="contact-text" placeholder="Message">
+                    <button class="button-nav" onclick="location.href='product.html';" value="back to product">Submit</button>
+                </form>
             </section>
         </section>
 
         <!-- checkout -->
         <section id="checkout">
-        <div class="form">
-            <form action="index.html">
-            <br>
-            <h3>Contact Details:</h3><br><br>
-            <h4>First name<span class="star">*</span></h4><br>
-            <input type="forminfo" name="firstname" value="Your First Name"><br>
-            <h4>Last name<span class="star">*</span></h4><br>
-            <input type="forminfo" name"lastname" value="Your Last Name"><br>
-            <h4>Email Address<span class="star">*</span></h4><br>
-            <input type="forminfo" name="Your Email Address" value="Your Eamil Address"><br>
-            <h4>Phone<span class="star">*</span></h4><br>
-            <input type="forminfo" name="Your Phone Number" value="Your Phone Number"><br>
-            <h4>City<span class="star">*</span></h4><br>
-            <input type="forminfo" name="Your City, State" value="Your City, State"><br><br><br>
-            </form>
-            <h3>Payment Method:</h3><br>
-            <p>Please select your payment method.</p><br>
-            <label class="payment">VISA/Master Card
-            <input type="radio" name="method">
-            <span class="checkmark"></span>
-            </label>
-            <label class="payment">PayPal
-            <input type="radio" name="method">
-            <span class="checkmark"></span>
-            </label>
-            <br><br>
-            <h4>Credit Card Number<span class="star">*</span></h4><br>
-            <input type="forminfo" name="number" value="Please enter the credit card number"><br><br>
-            <h4>Expiration date<span class="star">*</span></h4><br>
-            <input type="forminfo" name="date" value="MM/YY"><br><br>
-            <h4>Security Code<span class="star">*</span></h4><br>
-            <input type="forminfo" name="code" value="3-digit number"><br><br>
-            <h4>Full name<span class="star">*</span></h4><br>
-            <input type="forminfo" name="holder" value="Please enter the card holder's name"><br><br>
-            <button class="button-nav" onclick="location.href='product.html';" value="back to product">Checkout</button>
-        </div>
+            <section class="form">
+                <form action="index.html">
+                    <h1>Check out</h1>
+                    <h3>Contact </h3>
+                    <label>First Name</label>
+                    <input type="forminfo" name="First Name" value="First Name" placeholder="First Name">
+                    <label>Last Name</label>
+                    <input type="forminfo" name="lastname" value="Last Name" placeholder="Last Name">
+                    <label>Email</label>
+                    <input type="forminfo" name="Email" value="Your Eamil Address"><br>
+                    <h4>Phone</h4><br>
+                    <input type="forminfo" name="Your Phone Number" value="Your Phone Number"><br>
+                    <h4>City<span class="star">*</span></h4><br>
+                    <input type="forminfo" name="Your City, State" value="Your City, State"><br><br><br>
+                    </form>
+                    <h3>Payment Method:</h3><br>
+                    <p>Please select your payment method.</p><br>
+                    <label class="payment">VISA/Master Card
+                    <input type="radio" name="method">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="payment">PayPal
+                    <input type="radio" name="method">
+                    <span class="checkmark"></span>
+                    </label>
+                    <br><br>
+                    <h4>Credit Card Number<span class="star">*</span></h4><br>
+                    <input type="forminfo" name="number" value="Please enter the credit card number"><br><br>
+                    <h4>Expiration date<span class="star">*</span></h4><br>
+                    <input type="forminfo" name="date" value="MM/YY"><br><br>
+                    <h4>Security Code<span class="star">*</span></h4><br>
+                    <input type="forminfo" name="code" value="3-digit number"><br><br>
+                    <h4>Full name<span class="star">*</span></h4><br>
+                    <input type="forminfo" name="holder" value="Please enter the card holder's name"><br><br>
+                    <button class="button-nav" onclick="location.href='product.html';" value="back to product">Checkout</button>
+                </form>
+            </section>
         </section>
 
         <!-- Checkout Cart -->
