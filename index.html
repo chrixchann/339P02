@@ -322,108 +322,94 @@
 
         <!-- checkout -->
         <section id="checkout">
-            <section class="form">
+            <section class="flexbox">
                 <form action="index.html">
                     <h1>Check out</h1>
                     <h3>Contact </h3>
                     <label>First Name</label>
-                    <input type="forminfo" name="First Name" value="First Name" placeholder="First Name">
+                    <input type="checkout" name="First Name" value="First Name" placeholder="First Name">
                     <label>Last Name</label>
-                    <input type="forminfo" name="lastname" value="Last Name" placeholder="Last Name">
+                    <input type="checkout" name="lastname" value="Last Name" placeholder="Last Name">
                     <label>Email</label>
-                    <input type="forminfo" name="Email" value="Your Eamil Address"><br>
-                    <h4>Phone</h4><br>
-                    <input type="forminfo" name="Your Phone Number" value="Your Phone Number"><br>
-                    <h4>City<span class="star">*</span></h4><br>
-                    <input type="forminfo" name="Your City, State" value="Your City, State"><br><br><br>
+                    <input type="checkout" name="Email" value="Your Eamil Address"><br>
+                    <label>Phone no.</label>
+                    <input type="checkout" name="+1" value="Phone no.">
+
+                    <h3>Your Billing Address</h3>
+                    <label>Address</label>
+                    <input type="checkout" name="address1" value="address1" placeholder="Street address">
+                    <label>Address2</label>
+                    <input type="checkout" name="address2" value="address2" placeholder="(optional)">
+                    <label>City</label>
+                    <input type="checkout" name="city" value="city" placeholder="City">
+                    <label>Province</label>
+                    <form action="">
+                        <select name="province" id="province">
+                          <option value="BC">BC</option>
+                          <option value="AB">AB</option>
+                        </select>
                     </form>
-                    <h3>Payment Method:</h3><br>
-                    <p>Please select your payment method.</p><br>
-                    <label class="payment">VISA/Master Card
-                    <input type="radio" name="method">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="payment">PayPal
-                    <input type="radio" name="method">
-                    <span class="checkmark"></span>
-                    </label>
-                    <br><br>
-                    <h4>Credit Card Number<span class="star">*</span></h4><br>
-                    <input type="forminfo" name="number" value="Please enter the credit card number"><br><br>
-                    <h4>Expiration date<span class="star">*</span></h4><br>
-                    <input type="forminfo" name="date" value="MM/YY"><br><br>
-                    <h4>Security Code<span class="star">*</span></h4><br>
-                    <input type="forminfo" name="code" value="3-digit number"><br><br>
-                    <h4>Full name<span class="star">*</span></h4><br>
-                    <input type="forminfo" name="holder" value="Please enter the card holder's name"><br><br>
-                    <button class="button-nav" onclick="location.href='product.html';" value="back to product">Checkout</button>
+                    <input type="checkout" name="postal_code" value="postal_code" placeholder="postal code">
+         
+                    <h3>Payment</h3>
+                    <label>Card Number</label>
+                    <input type="checkout" name="card_number" value="card_number" placeholder="">
+                    <label>Expiry date</label>
+                    <form action="">
+                        <select name="expiry_date" id="expiry_month">
+                          <option value="Jan">Jan</option>
+                          <option value="Feb">Feb</option>
+                          <option value="Mar">Mar</option>
+                          <option value="Apr">Apr</option>
+                        </select>
+                    </form>
+                    <form action="">
+                        <select name="expiry_date" id="expiry_year">
+                          <option value="23">2023</option>
+                          <option value="24">2024</option>
+                          <option value="25">2025</option>
+                          <option value="26">2026</option>
+                        </select>
+                    </form>
+                    <label>CVC</label>
+                    <input type="checkout" name="CVC" value="CVC">
                 </form>
             </section>
         </section>
-
-        <!-- Checkout Cart -->
-        <section id="checkout">
-        <section class="element">
-        <section class="bar">
-            <h3>Checkout Cart</h3>
-        </section>
-
-        <div class="checkout">
-            <div class="item">
-            <p><img src="img/BMW.png" alt="BMW" style="width:35%"></p>
-            </div>
-            <div class="text2">
-            <h3>BMW 4 Series Cabriolet</h3>
-            <div class="id">
-                <p>Product ID: 428335</p>
-            </div>
-            <p>Color: White<br><br>Wheels type: 19"<br> Winter Wheels<br><br><b>Quantity: 1</b></p>
-            <div class="price">
-                <h4>$71,535.00</h4>
-            </div>
-            </div>
-        </div>
-
-        <br><br><br><br>
-        <div class="checkout">
-            <div class="item">
-            <p><img src="img/BMW2.png" alt="BMW2" style="width:35%"></p>
-            </div>
-            <div class="text2">
-            <h3>2023 BMW i4 eDrive35</h3>
-            <div class="id">
-                <p>Product ID: 428225</p>
-            </div>
-            <p>Color: Blue<br><br>Wheels type: 18"<br> Winter Wheels<br><br><b>Quantity: 1</b></p>
-            <div class="price">
-                <h4>$58,725.00</h4>
-            </div>
-            </div>
-        </div>
-
-        <div class="total">
-            <h3>ORDER SUMMARY | 2 ITEMS</h3>
-            <p>Items subtotal<span class="price">CAD $ 71,535.00</span></p>
-            <p>Items subtotal<span class="price">CAD $ 58,725.00</span></p><br>
-            <h3>SUBTOTAL<span class="subtotal">CAD $130,260.00</span></h3>
-            <p>Estimated Tax<span class="tax">TBD</span></p><br>
-            <h3>ORDER TOTAL<span class="subtotal">CAD $130,260.00</span></h3>
-            <br>
-            <button class="button-nav" onclick="location.href='checkout.html';" value="checkout">Checkout</button>
-            <button class="button-nav" onclick="location.href='product.html';" value="back to product">Continue Shopping</button>
-        </div>
-        </section>
-        
-
-        
+        <section class="flexbox">
+            <h4>Order Summary</h4>
+            <img src="img/hot_latte.png" alt="hot_latte">
+            <h3>Hot Latte</h3>
+            <p>$6.00</p>
+            <label>Quantity</label>
+            <form action="">
+                <select name="checkout_quantity" id="checkout_quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+            </form>
+            <p>Total: $6.00</p>
+            <button class="button-nav" onclick="location.href='index.html';" value="back to product">Place Order</button>
         </section>
     </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
 
-    
-</section>
+    <section id="branding_components">
+        <section id="font">
+            <h1>font</h1>
+            type here
+        </section>
+        <section id="colour">
+            <h1>colour palette</h1>
+            type here
+        </section>
+        <section id="imagery">
+            <h1>potential imagery</h1>
+            type here
+        </section>
+    </section>
 
-
-
+    <section id="citation">
+        <p></p>
+    </section>
 </body>
 </html>
