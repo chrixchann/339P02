@@ -14,11 +14,11 @@
         <img src="img/logo.png" alt="" class="logo">
         <nav>
             <ul>
-                <li><a class="home" href="index.html">Home</a></li>
-                <li><a class="about" href="about.html">About</a></li>
-                <li><a class="menu" href="menu.html">Menu</a></li> 
-                <li><a class="Contact us" href="ContactUs.html">Contact Us</a></li> 
-                <li><a class="checkout" href="checkout.html"><img src="img/checkout.png" alt="cart" class="cart"></a></li> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a  href="menu.html">Menu</a></li> 
+                <li><a  href="ContactUs.html">Contact Us</a></li> 
+                <li><a href="checkout.html"><img src="img/checkout.png" alt="cart" class="cart"></a></li> 
                 </li>
               </ul>
         </nav>
@@ -86,9 +86,9 @@
             <h4>CSS selector:</h4>
             <p>.button-nav</p>
             <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+            <code>&lt;a href="#" class="navLink"&gt;Default Button&lt;/a&gt;</code>
             <h4>Rendered element:</h4>
-            <a class="button-nav" href="#">Default Button</a>
+            <a href="index.html" class="navLink">Home</a>
         </section>
 
         <!-- Submit/Reset Buttons -->
@@ -105,9 +105,9 @@
                 &lt;/form&gt;</code>
             <h4>Rendered element:</h4>
             <form action="rs_button">
-                <a class="button-nav" href="#">Reset!</a>
-                <br>
-                <a class="button-nav" href="#">Submit</a>
+                <button class="submitButton" >Submit</button>
+                
+                <button class="resetButton" >Reset</button>
             </form>
             </section>
         </section>
@@ -180,6 +180,35 @@
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
+    <h2 class="sectionHeader">Colour Palette</h2>
+    <div class="colours">
+       
+        <div>
+            <div class="color1"></div>
+            <p>#FBAE42<br>Title</p>
+        </div>
+
+        <div>
+            <div class="color2"></div>
+            <p>#939499<br>navigation text</p>
+        </div>
+        
+        <div>
+            <div class="color3"></div>
+            <p>#1B1B1B<br>major text</p>
+        </div>
+
+        <div>
+            <div class="color4"></div>
+            <p>#F3F3F3<br>text box</p>
+        </div>
+
+        <div>
+            <div class="color5"></div>
+            <p>#FFFFFF<br>background</p>
+        </div>
+
+    </div>
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
 
@@ -273,17 +302,17 @@
         <h2 class="sectionHeader">Combined Elements</h2>
 
         <!-- Main Navigation -->
-        <h3>Navigation Bar</h3>
+        <h3 class="sectionHeader">Navigation Bar</h3>
         <div class="navbarShow">
             <img src="img/logo.png" alt="" class="logo">
             
             <nav>
                 <ul>
-                    <li><a class="home" href="index.html">Home</a></li>
-                    <li><a class="about" href="about.html">About</a></li>
-                    <li><a class="menu" href="menu.html">Menu</a></li> 
-                    <li><a class="Contact us" href="ContactUs.html">Contact Us</a></li> 
-                    <li><a class="checkout" href="checkout.html"><img src="img/checkout.png" alt="cart" class="cart"></a></li> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li> 
+                    <li><a href="ContactUs.html">Contact Us</a></li> 
+                    <li><a href="checkout.html"><img src="img/checkout.png" alt="cart" class="cart"></a></li> 
                     </li>
                   </ul>
             </nav>
@@ -293,7 +322,7 @@
         <!-- Menu -->
 
         <div class="element">
-            <h3>Menu</h3>
+            <h3 class="sectionHeader">Menu</h3>
             <div class="menu">
                 <div class="listing">
                     <a class="checkout" href="hot_latte.html"><img src="img/hot_latte.png" alt="hot_latte"></a>
@@ -325,7 +354,7 @@
 
         <!-- Product Detail -->
         <section id="product">
-            <h3>Product Listing</h3>
+            <h3 class="sectionHeader">Product Listing</h3>
             <div class="productListing">
                 <section class="image">
                     <img src="img/hot_latte.png" alt="hot_latte">
@@ -337,6 +366,7 @@
 
                     <div class="productMods">
                         <div>
+                            <h4>Size</h4>
                             <form action="">
                                 <select name="province" id="province">
                                     <option value="12">12 oz</option>
@@ -345,6 +375,8 @@
                             </form>
                         </div>
                         <div>
+                            <h4>Milk</h4>
+
                             <form action="">
                                 <select name="province" id="province">
                                     <option value="2">2%</option>
@@ -355,36 +387,49 @@
                     </div>
 
                    
-                    <button class="button-nav" onclick="location.href='product.html';" value="back to product">Order Now</button>
+                    <button class="button-nav" onclick="location.href='product.html';" value="back to product">Add to Cart</button>
                 </section>
             </div>
         </section>
         
         <!-- Contact Us -->
         <section id="contact">
-            <h1>Contact Us</h1>
-            <p>Let us hear from you</p>
-            <p>+1 (778)513-7021</p>
-            <p>cafe@hive.city</p>
-            <section class="form">
-                <form action="index.html">
-                    <label><b>First Name</b></label>
-                    <input type="contact-text" name="First Name" value="First Name" placeholder="First Name">
-                    <label><b>Last Name</b></label>
-                    <input type="contact-text" name="lastname" value="Last Name" placeholder="Last Name">
-                    <label><b>Email</b></label>
-                    <input type="contact-text" placeholder="Email">
-                    <label><b>Subject</b></label>
-                    <input type="contact-text" placeholder="Subject">
-                    <label><b>Message</b></label>
-                    <input type="contact-text" placeholder="Message">
-                    <button class="button-nav" onclick="location.href='product.html';" value="back to product">Submit</button>
-                </form>
-            </section>
+            <h3 class="sectionHeader">Contact Us</h3>
+            <div class="contactForm">
+                <div class="contactInfo">
+                    <h2>We want to hear from you!</h2>
+                    <h3>Contact us at:</h3>
+                    <p>+1 (778)513-7021</p>
+                    <p>cafe@hive.city</p>
+                </div>
+                <div class="contactMessage">
+                    <section class="form">
+                        <form action="index.html">
+                            <div class="contactInput">    
+                                <label><b>First Name</b><br>
+                                <input type="contact-text" name="First Name" value="First Name" placeholder="First Name"></label>
+                                <label><b>Last Name</b><br>
+                                <input type="contact-text" name="lastname" value="Last Name" placeholder="Last Name"></label>
+                                <label><b>Email</b><br>
+                                
+                                <input type="contact-text" placeholder="Email"></label>
+                                <label><b>Subject</b><br>
+                                <input type="contact-text" placeholder="Subject"></label>
+                                <label><b>Message</b><br>
+                                <input type="contact-text" placeholder="Message"></label>
+                                <button class="button-nav" onclick="location.href='product.html';" value="back to product">Submit</button>
+                            </div>
+
+                        </form>
+                    </section>
+                </div>
+
+            </div>
+
         </section>
 
         <!-- checkout -->
-        <section id="checkout">
+        <!-- <section id="checkout">
             <section class="flexbox">
                 <form action="index.html">
                     <h1>Check out</h1>
@@ -454,11 +499,11 @@
             <p>Total: $6.00</p>
             <button class="button-nav" onclick="location.href='index.html';" value="back to product">Place Order</button>
         </section>
-    </section>
+    </section> -->
 
     <!-- branding components -->
-    <section id="components">
-        <h1>Branding Components</h1>
+    <!-- <section id="components">
+        <h2>Branding Components</h2>
         <section id="font1">
             <h1>font</h1>
             <p>Helvetica Regular: body text</p>
@@ -468,16 +513,9 @@
         </section>
         <section id="font3">
             <p>Helvetica Bold Oblique - Highlighted Title</p>
-        </section>
-        <section id="colour">
-            <h1>colour palette</h1>
-            <p>#FBAE42<br>Title</p>
-            <p>#939499<br>navigation text</p>
-            <p>#1B1B1B<br>major text</p>
-            <p>#F3F3F3<br>text box</p>
-            <p>#FFFFFF<br>background</p>
-        </section>
-        <section id="imagery">
+        </section> -->
+
+        <!-- <section id="imagery">
             <h1>potential imagery</h1>
             <a href="https://www.facebook.com/HiveCafeNewWest/photos/pb.100033841465564.-2207520000./205109043419929/?type=3"><img src="img/home1.png" alt="home1" style="width:50%"></a>
             <a href="https://www.facebook.com/HiveCafeNewWest/photos/pb.100033841465564.-2207520000./219214415342725/?type=3"><img src="img/home2.png" alt ="home2" style="width:50%"></a>
@@ -505,7 +543,7 @@
             <img src="img/checkout.png" alt="checkout" style="width:50%">
             <img src="img/logo.png" alt="Vegan_Lemologon_Loaf" style="width:50%">
            
-        </section>
+        </section> -->
     </section>
     
     <!-- Citations -->
