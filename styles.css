@@ -400,3 +400,11 @@ button:hover{
     opacity: 0.7;
     cursor: pointer;
 }
+
+fieldset:focus-within{
+    border: 2px #fbae42 solid;
+}
+
+ img:hover{
+    opacity: .5;
+}
