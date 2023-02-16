@@ -1,3 +1,8 @@
+body{
+    font-family: 'Inter';
+    letter-spacing: -.05em;
+}
+
 h1{
     font-size:large;
 }
