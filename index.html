@@ -33,7 +33,6 @@
     <!-- nav bar of style guide -->
     <section class="navbar2">
         <ul>
-          <li><button href="#idea">Branding Elements</button></li>
           <li><button href="#interactive_elements">Interactive Elements</button></li>
           <li><button href="#text_elements">Text Elements</button></li>
           <li><button href="#combined_elements">Combined Elements</button></li>
@@ -68,7 +67,7 @@
         
     </div>
     <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <h2>Interactive Elements</h2>
+    <h2 class="sectionHeader">Interactive Elements</h2>
     <div class="gridContainer">
          <!-- In-Text Link -->
          <section class="gridElement">
@@ -183,49 +182,73 @@
 
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-        <h2>text elements</h2>
 
-        <!-- Four Levels of Headings -->
-        <section class="element">
-        <section class="element4">
-            <h3>Heading</h3>
-            <h4>CSS selector:</h4>
-            <p>.headings</p>
-            <h4>Sample code:</h4>
-            <code>&lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
-            &lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
-            &lt;h3&gt;This is heading 3&lt;/h3&gt;<br>
-            &lt;h4&gt;This is heading 4&lt;/h4&gt;<br>
-            &lt;h5&gt;This is heading 5&lt;/h5&gt;<br></code>
-            <h4>Rendered element:</h4>
-            <section class="headings">
-            <h1>This is heading 1</h1>
-            <h2>This is heading 2</h2>
-            <h3>This is heading 3</h3>
-            <h4>This is heading 4</h4>
-            <h5>This is heading 5</h5>
-            </section>
-        </section>
-        </section>
 
-        <!-- Paragraph -->
-        <section class="element">
-        <section class="element4">
-            <h3>Paragraph</h3>
-            <h4>CSS selector:</h4>
-            <p>p</p>
-            <h4>Sample code:</h4>
-            <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.&lt;/p&gt;</code>
-            <h4>Rendered element:</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        </section>
+              <h2 class="sectionHeader">Text Styling</h2>
+
+            <!-- Heading 1 -->
+            <div class="headings">
+              <div class="headingsID">
+                <p>Heading 1</p>
+              </div>
+      
+              <h1 class="header">I love the coffee at Hive Cafe!</h1>
+              <div class="headingsDescr">
+                <p>35px, 700</p>
+              </div>
+            </div>
+            <!-- Heading 2 -->
+            <div class="headings">
+              <div class="headingsID">
+                <p>Heading 2</p>
+              </div>
+      
+              <h2 class="header">I love the coffee at Hive Cafe!</h2>
+              <div class="headingsDescr">
+                <p>23px, 700, italic</p>
+              </div>
+            </div>
+      
+            <!-- Heading 3 -->
+            <div class="headings">
+              <div class="headingsID">
+                <p>Heading 3</p>
+              </div>
+      
+              <h3 class="header">I love the coffee at Hive Cafe!</h3>
+              <div class="headingsDescr">
+                <p>18px, 500</p>
+              </div>
+            </div>
+      
+            <!-- Heading 4 -->
+            <div class="headings">
+              <div class="headingsID">
+                <p>Heading 4</p>
+              </div>
+      
+              <h4 class="header">I love the coffee at Hive Cafe!</h4>
+              <div class="headingsDescr">
+                <p>16px, 500</p>
+              </div>
+            </div>
+      
+            <!-- Paragraph -->
+            <div class="headings">
+              <div class="headingsID">
+                <p>Paragraph</p>
+              </div>
+              <p class="header">
+                I love the lavender honeycomb latte from Hive Cafe its delicious.
+              </p>
+              <div class="headingsDescr">
+                <p>16px, 300</p>
+              </div>
+            </div>
+          </section>
 
         <!-- Numbered Lists -->
-        <section class="element">
+        <!-- <section class="element">
             <section class="element4">
             <h3>Numbered Lists</h3>
             <h4>CSS selector:</h4>
@@ -241,78 +264,100 @@
                 <li>This is list number 2</li>
             </ol>
             </section>
-        </section>
+        </section> -->
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
       
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-        <h2>Combined Elements</h2>
+        <h2 class="sectionHeader">Combined Elements</h2>
 
         <!-- Main Navigation -->
-        <section class="element">
-            <h3>Main Navigation</h3>
-            <section class="navbar1">
+        <h3>Navigation Bar</h3>
+        <div class="navbarShow">
+            <img src="img/logo.png" alt="" class="logo">
+            
+            <nav>
                 <ul>
-                <li><a class="home" href="index.html">Home</a></li>
-                <li><a class="about" href="about.html">About</a></li>
-                <li><a class="menu" href="menu.html">Product Listing</a></li> 
-                <li><a class="Contact us" href="ContactUs.html">Contact us</a></li> 
-                <li><a class="checkout" href="checkout.html"><img src="img/checkout.png" alt="logo"></a></li> 
-                </li>
-                </ul>
-            </section>
-        </section>
+                    <li><a class="home" href="index.html">Home</a></li>
+                    <li><a class="about" href="about.html">About</a></li>
+                    <li><a class="menu" href="menu.html">Menu</a></li> 
+                    <li><a class="Contact us" href="ContactUs.html">Contact Us</a></li> 
+                    <li><a class="checkout" href="checkout.html"><img src="img/checkout.png" alt="cart" class="cart"></a></li> 
+                    </li>
+                  </ul>
+            </nav>
+    
+        </div>
 
         <!-- Menu -->
-        <section id="menu">
-            <section class="element">
-                <h3>Menu</h3>
-                <section class="listing">
-                    <img src="img/hot_latte.png" alt="hot_latte">
-                    <p><b>$6.00</b></p>
+
+        <div class="element">
+            <h3>Menu</h3>
+            <div class="menu">
+                <div class="listing">
+                    <a class="checkout" href="hot_latte.html"><img src="img/hot_latte.png" alt="hot_latte"></a>
                     <p>Hot Latte</p>
-                </section>
-                <section class="listing">
-                    <img src="img/caramel_latte.png" alt="hot_latte">
-                    <p><b>$6.25</b></p>
+                    <p class="price">$6.00</p>
+
+                </div>
+                <div class="listing">
+                    <a class="checkout" href="caramel_latte.html"><img src="img/caramel_latte.png" alt="hot_latte"></a>
                     <p>Caramel Latte</p>
-                </section>
-            </section>
-        </section>
+                    <p class="price">$6.25</p>
+
+                </div>
+                <div class="listing">
+                    <a class="checkout" href="cake1.html"><img src="img/cake1.png" alt="cake"></a>
+                    <p>Carrot Cake</p>
+                    <p class="price">$7.25</p>
+
+                </div>
+                <div class="listing">
+                    <a class="checkout" href="cake2.html"><img src="img/cake2.png" alt="cake"></a>
+                    <p>Honeycomb Cake</p>
+                    <p class="price">$8.00</p>
+
+                </div>
+            </div>
+        </div>
+
 
         <!-- Product Detail -->
         <section id="product">
-            <h1>Product/Service Listing</h1>
-            <section class="element">
-                <section class="flexbox">
+            <h3>Product Listing</h3>
+            <div class="productListing">
+                <section class="image">
                     <img src="img/hot_latte.png" alt="hot_latte">
                 </section>
-                <section class="flexbox">
-                    <h1>Hot Latte</h1>
-                    <p>$6.00</p>
-                    <hr>
-                    <h3>Size choice</h3>
-                    <label class="size">
-                        <input type="radio" name="size-12">12 oz
-                        <span class="checkmark"></span>
-                    </label><br>
-                    <label class="size">
-                        <input type="radio" name="size-16">16 oz
-                        <span class="checkmark"></span>
-                    </label><br>
-                    <h3>Milk choice</h3>
-                    <label class="milk">
-                        <input type="radio" name="milk-whole">Whole Milk
-                        <span class="checkmark"></span>
-                    </label><br>
-                    <label class="milk">
-                        <input type="radio" name="milk-skim">Skim Milk
-                        <span class="checkmark"></span>
-                    </label><br>
+                <section class="productDetails">
+                    <h1 class="header">Hot Latte</h1>
+                    <p>Made with steamed, frothy milk, blended with our rich, freshly ground and brewed espresso.</p>
+                    <h3 >$6.00</h3>
+
+                    <div class="productMods">
+                        <div>
+                            <form action="">
+                                <select name="province" id="province">
+                                    <option value="12">12 oz</option>
+                                    <option value="16">16 oz</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div>
+                            <form action="">
+                                <select name="province" id="province">
+                                    <option value="2">2%</option>
+                                    <option value="skim">Skim</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+                   
                     <button class="button-nav" onclick="location.href='product.html';" value="back to product">Order Now</button>
                 </section>
-            </section>
+            </div>
         </section>
         
         <!-- Contact Us -->

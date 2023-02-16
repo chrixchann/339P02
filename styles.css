@@ -9,22 +9,35 @@ body{
     padding-right: 8%;
 }
 
-h1{
-    font-size:5rem;
-    padding-left: 0;
-}
-h2{
-    font-size: 3rem;
-    font-weight: bolder;
+.sectionHeader{
+    /* color: #fbae42; */
+    width: 100%;
+    border-bottom: 2px #fbae42 solid;
+    padding-bottom: .3em;
 }
 
-h3{
-    font-size: 1.8em;
-
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    /* margin-bottom: 5px; */
+}
+  
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* font-style: italic; */
+    /* width: 100%; */
 }
 
-h4{
-    color:#fbae42;
+  
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* font-style: italic; */
+}
+  
+h4 {
+    font-weight: 600;
 }
 
 .navbar1{
@@ -92,6 +105,7 @@ nav ul li a{
 .gridContainer{
     display: grid;
     grid-template-columns:33.333% 33.3333% 33.3333%;
+    margin-bottom: 4em;
 
 }
 
@@ -102,4 +116,103 @@ nav ul li a{
 
 img{
     width: 100px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px dashed grey;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+.headingsID {
+
+    border: 0px none;
+
+}
+  
+.header {
+    margin-top: -.2em;
+    margin-bottom: -.2em;
+}
+  
+.headingsDescr {
+
+    font-style: italic;
+}
+
+.navbarShow{
+    display: flex;
+    align-items: center;
+    padding-top: .8em;
+    padding-bottom: .8em;
+
+    border-top: 1px #fbae42 solid;
+    border-bottom:  1px #fbae42 solid;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns:33.333% 33.3333% 33.3333%;
+}
+
+.listing{
+
+}
+
+.listing img{
+    width: 85%;
+    
+    object-fit: cover;
+}
+
+.price{
+    font-weight: 700;
+}
+
+.productListing{
+    display: flex;
+
+}
+
+.productListing .header{
+    margin-bottom: 0em;
+
+}
+
+.productListing .price{
+    font-weight: 600;
+    font-size: 2em;
+
+}
+
+.productListing .image{
+    flex-basis: 50%;
+
+}
+
+.productListing .image img{
+    width: 100%;
+
+}
+
+.productDetails{
+    margin-left: 4em;
+}
+
+.productMods{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.productMods div{
+    margin-right: 2em;
+}
+
+.productMods select{
+    background-color: white;
+    padding: .7em 1em .7em 0.5em;
+    border: 2px #fbae42 solid;
+    border-radius: .5em;
 }
