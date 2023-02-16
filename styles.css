@@ -1,8 +1,105 @@
-body{
+*{
     font-family: 'Inter';
     letter-spacing: -.05em;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 h1{
-    font-size:large;
+    font-size:5rem;
+    padding-left: 0;
+}
+h2{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 1.8em;
+
+}
+
+h4{
+    color:#fbae42;
+}
+
+.navbar1{
+    padding-top: 1em;
+    height: 15%;
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar2{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 5em;
+    /* height: 10em; */
+    cursor:pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+.cart{
+    width: 1em;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 2em;
+    font-size: 1.3em;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+    font-weight: 400;
+}
+
+.navbar2 ul{
+    padding-left: 0;
+}
+
+.navbar2 ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 1em;
+
+    margin-bottom: 1em;
+}
+.navbar2 ul li button{
+    background-color:#fbae42;
+    border: 0;
+    border-radius: .1em;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: .6em .6em;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns:33.333% 33.3333% 33.3333%;
+
+}
+
+.gridElement{
+    border: 1px #fbae42 solid;
+    padding: 2em
+}
+
+img{
+    width: 100px;
 }

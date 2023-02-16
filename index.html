@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" lang="ENG">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -10,45 +10,43 @@
 </head>
 <body>
     <!-- nav bar of cafe website -->
-    <section class="navbar1">
-        <ul>
-          <li><a class="home" href="index.html">Home</a></li>
-          <li><a class="about" href="about.html">About</a></li>
-          <li><a class="menu" href="menu.html">Product Listing</a></li> 
-          <li><a class="Contact us" href="ContactUs.html">Contact us</a></li> 
-          <li><a class="checkout" href="checkout.html"><img src="img/checkout.png" alt="logo"></a></li> 
-          </li>
-        </ul>
-    </section>
+    <div class="navbar1">
+        <img src="img/logo.png" alt="" class="logo">
+        <nav>
+            <ul>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="about" href="about.html">About</a></li>
+                <li><a class="menu" href="menu.html">Menu</a></li> 
+                <li><a class="Contact us" href="ContactUs.html">Contact Us</a></li> 
+                <li><a class="checkout" href="checkout.html"><img src="img/checkout.png" alt="cart" class="cart"></a></li> 
+                </li>
+              </ul>
+        </nav>
+
+    </div>
     <!-- content -->
     <section class="content">
         <header>
-          <h2>P02 - HIVE CAFE Style Guide</h2>
+          <h1>HIVE CAFE Style Guide</h1>
         </header>
     </section>
     <!-- nav bar of style guide -->
     <section class="navbar2">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Contents</a>
-            <div class="dropdown-content">
-              <a href="#idea">Branding Idea</a>
-              <a href="#interactive_elements">Interactive Elements</a>
-              <a href="#text_elements">Text Elements</a>
-              <a href="#combined_elements">Combined Elements</a>
-              <a href="#components">Brand Components</a>
-              <a href="#citations">Citations</a>
-            </div>
-          </li>
-          <li><a href="#product">Product/Service Listing</a>
-          <li><a href="#checkout">Checkout</a></li>
+          <li><button href="#idea">Branding Elements</button></li>
+          <li><button href="#interactive_elements">Interactive Elements</button></li>
+          <li><button href="#text_elements">Text Elements</button></li>
+          <li><button href="#combined_elements">Combined Elements</button></li>
+          <li><button href="#components">Brand Components</button></li>
+          <li><button href="#citations">Citations</button></li>
+          <li><button href="#product">Product/Service Listing</button>
+          <li><button href="#checkout">Checkout</button></li>
         </ul>
     </section>
 
     <!-- HTML elements // -->
     <!-- branding idea -->
-    <section id="idea">
+    <!-- <section id="idea">
         <h2>What does the company do, or offer?</h2>
         <p>Hive Cafe is a coffee shop that offers a variety of coffee, tea, and other beverages, as well as a selection of baked goods, pastries, and light snacks. The company is dedicated to providing high-quality coffee and food, as well as creating a warm and welcoming atmosphere for its customers.</p> 
         <p>In addition to its menu offerings, Hive Cafe also places a strong emphasis on sustainability and ethical sourcing. They may source their coffee beans directly from small-scale farmers, or use only organic and fair-trade ingredients in their menu items.</p>
@@ -64,13 +62,16 @@
         <p>Hive Cafe creates a relaxed and inviting atmosphere, making it a great place for customers to unwind and socialize with friends or colleagues. This can entice people who are looking for a comfortable and enjoyable experience.</p>
         <h4>Convenient location:</h3>
         <p>Hive Cafe may be located in a convenient area, making it easily accessible for customers who are on the go or in the neighborhood.</p>
-    </section>
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-        <h2>Interactive elements</h2>
+    </section> -->
 
-        <!-- In-Text Link -->
-        <section class="element1">
+    <div class="branding">
+        
+    </div>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <h2>Interactive Elements</h2>
+    <div class="gridContainer">
+         <!-- In-Text Link -->
+         <section class="gridElement">
             <h3>In-text link</h3>
             <h4>CSS selector:</h4>
             <p>.element1 a</p>
@@ -81,7 +82,7 @@
         </section>
 
         <!-- Default Button styling section -->
-        <section class="element1">
+        <section class="gridElement">
             <h3>Navigation Link</h3>
             <h4>CSS selector:</h4>
             <p>.button-nav</p>
@@ -92,7 +93,7 @@
         </section>
 
         <!-- Submit/Reset Buttons -->
-        <section class="element">
+        <section class="gridElement">
             <section class="element4">
             <h3>Submit/Reset Buttons</h3>
             <h4>CSS selector:</h4>
@@ -113,7 +114,7 @@
         </section>
 
         <!-- Text Input -->
-        <section class="element">
+        <section class="gridElement">
             <section class="element4">
             <h3>Text Input Field with Label</h3>
             <h4>CSS selector:</h4>
@@ -134,7 +135,7 @@
         </section>
 
         <!-- Radio Button with Label -->
-        <section class="element">
+        <section class="gridElement">
             <section class="element4">
             <h3>Radio Button with Label</h3>
             <h4>CSS selector:</h4>
@@ -161,7 +162,7 @@
         </section>
 
         <!-- An Image as a Link -->
-        <section class="element3">
+        <section class="gridElement">
             <section class="element4">
             <h3>Image as a Link</h3>
             <h4>CSS selector:</h4>
@@ -172,6 +173,11 @@
             <a href="https://www.instagram.com/hive.cafe/"><img src="img/cake1.png" alt="SocialMedia"></a>
             </section>
         </section>
+    </div>
+    <section id="interactive_elements" >
+       
+
+       
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
