@@ -15,7 +15,7 @@ body{
     width: 100%;
     height: 100vh;
     /* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
-    background-image:  linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.1)), url(/img/Desktop\ -\ 9.png);
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(/img/Desktop\ -\ 9.png);
     background-position: center;
     background-size: cover;
 }
@@ -31,9 +31,11 @@ body{
     width: 100%;
     border-bottom: 2px #fbae42 solid;
     padding-bottom: .3em;
+    margin-bottom: .6em;
+    margin-top: 2em;
 }
 
-.flexContainer{
+.flexContainerHome{
     display: flex;
     height: 32em;
     align-items: flex-end;
@@ -42,26 +44,26 @@ body{
     
 }
 
-.flexElement1{
+.flexElement1Home{
     flex-basis: 60%;
     color: white;
     
 }
 
 
-.flexElement{
+.flexElementHome{
     flex-basis: 40%;
     color: white;
 }
 
 
-.flexElement p{
+.flexElementHome p{
     letter-spacing: 0;
     padding-bottom: 1em;
 
 }
 
-.flexElement h2{
+.flexElementHome h2{
     padding-bottom: .2em;
 }
 
@@ -73,14 +75,14 @@ body{
     align-items: center;
 }
 
-.flexContainerLight .flexElement{
+.flexContainerLight .flexElementHome{
     flex-basis: 40%;
     color: black;
     padding-right: 5em;
 
 }
 
-.flexContainerLight .flexElement2{
+.flexContainerLight .flexElement2Home{
     flex-basis: 60%;
     display: flex;
     gap: 0;
@@ -88,7 +90,7 @@ body{
     align-items: center;
 }
 
-.flexContainerLight .flexElement2 img{
+.flexContainerLight .flexElement2Home img{
     flex-basis: 50%;
 }
 
@@ -101,13 +103,13 @@ body{
     background-color: #1b1b1b;
 }
 
-.flexContainerDark .pageContent .flexElement{
+.flexContainerDark .pageContent .flexElementHome{
     flex-basis: 40%;
     color: white;
 
 }
 
-.flexContainerDark .pageContent .flexElement2{
+.flexContainerDark .pageContent .flexElement2Home{
     flex-basis: 60%;
     display: flex;
     gap: 0;
@@ -117,7 +119,7 @@ body{
 
 }
 
-.flexContainerDark .pageContent .flexElement2 img{
+.flexContainerDark .pageContent .flexElement2Home img{
     flex-basis: 50%;
 }
 
@@ -127,13 +129,16 @@ body{
     flex-wrap: wrap;
     color: black;
     align-items: center;
+
+    border-bottom: #939499 solid 1px;
 }
 
-.flexContainerIG .flexElement{
+.flexContainerIG .flexElementHome{
     color: black;
+    flex-basis: 30%;
 }
 
-.flexContainerIG .flexElement .yellowHighlight{
+.flexContainerIG .flexElementHome .yellowHighlight{
     color: #fbae42;
     font-size: 2rem;
 }
@@ -142,8 +147,50 @@ body{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     margin-bottom: 4em;
-    gap: 1.5em;
+    gap: .5em;
+    flex-basis: 70%;
+}
 
+.igGrid a{
+    height: auto;
+
+}
+
+.footer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+.footer .flexContainerHome{
+    display: flex;
+    gap: 1.3em;
+    height: 0em;
+
+}
+
+.footer .flexContainerHome img{
+    width: 2em;
+}
+
+.footer .flexContainerHome p{
+    margin-top: 2em;
+}
+
+.headerImg{
+    width: 100%;
+    height: 30em;
+}
+
+.flexContainer{
+    display: flex;
+    color: black;
+}
+
+.flexElement{
+    flex-basis: 50%;
 }
 
 h1 {
@@ -170,11 +217,22 @@ h4 {
     font-weight: 600;
 }
 
-.navbar1{
+.navbarDark{
     padding-top: 1em;
     height: 15%;
     display: flex;
     align-items: center;
+    color: #f3f3f3;
+
+}
+
+
+.navbarLight{
+    padding-top: 1em;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    color: #1b1b1b;
 
 }
 
@@ -208,8 +266,19 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(236, 236, 236);
     font-weight: 400;
+}
+
+.navbarLight nav ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #616161;
+}
+
+.navbarDark nav ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #f3f3f3;
 }
 
 .navbar2 ul{
