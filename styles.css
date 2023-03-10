@@ -13,18 +13,18 @@ body{
 
 .homeHeader{
     width: 100%;
-    height: 45rem;
+    height: 50rem;
     /* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
-    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(/img/Desktop\ -\ 9.png);
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(img/Desktop\ -\ 9.png);
     background-position: center;
     background-size: cover;
 }
 
 .aboutHeader{
     width: 100%;
-    height: 60rem;
+    height: 53rem;
     /* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
-    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(/img/aboutus.png);
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(img/aboutus.png);
     background-position: center;
     background-size: cover;
 }
@@ -32,7 +32,7 @@ body{
 .column{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .map{
@@ -45,7 +45,7 @@ body{
     border-radius: 1rem;
 }
 
-.pageContent{
+.pageContent, #contact, #checkout{
     padding-left: 8%;
     padding-right: 8%;
     
@@ -62,10 +62,10 @@ body{
 
 .flexContainerAbout{
     display: flex;
-    height: 48em;
+    height: 41em;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-bottom: 6.6em;
+    margin-bottom: 6.6em; 
     
 }
 .flexContainerAbout h2{
@@ -76,34 +76,56 @@ body{
 
 .flexContainerHome{
     display: flex;
-    height: 32em;
+    height: 38em;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-bottom: 4.6em;
-    
+    margin-bottom: 2em;
+}
+
+.flexContainerHome1{
+    display: flex;
+    height: em;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 12em;
 }
 
 
 .flexElement1Home{
-    flex-basis: 60%;
+    flex-basis: 61%;
     color: white;
     
 }
 
-
-.flexElementHome{
-    flex-basis: 40%;
+.flexElement1Home1{
+    flex-basis: 59%;
     color: white;
 }
 
+.flexElementHome{
+    flex-basis: 39%;
+    color: white;
+}
+
+.flexElementHome1{
+    flex-basis: 41%;
+    color: white;
+}
 
 .flexElementHome p{
     letter-spacing: 0;
-    padding-bottom: 1em;
+}
 
+.flexElementHome1 p{
+    letter-spacing: 0;
+    margin-bottom: 2em;
 }
 
 .flexElementHome h2{
+    padding-bottom: .2em;
+}
+
+.flexElementHome1 h2{
     padding-bottom: .2em;
 }
 
@@ -165,17 +187,16 @@ body{
 
 .flexContainerIG{
     display: flex;
-    height: 32em;
+    height: 40em;
     flex-wrap: wrap;
     color: black;
     align-items: center;
-
     border-bottom: #939499 solid 1px;
 }
 
 .flexContainerIG .flexElementHome{
     color: black;
-    flex-basis: 30%;
+    flex-basis: 50%;
 }
 
 .flexContainerIG .flexElementHome .yellowHighlight{
@@ -183,18 +204,21 @@ body{
     font-size: 2rem;
 }
 
+
 .igGrid{
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    margin-bottom: 4em;
-    gap: .5em;
-    flex-basis: 70%;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    flex-basis: 50%; 
+    width: 10%;
 }
 
-.igGrid a{
+.igImage img{
     height: auto;
-
+    width: 100%;
+    
 }
+
 
 .footer{
     align-items: center;
@@ -204,18 +228,18 @@ body{
     padding-top: 3em;
 }
 
-.footer .flexContainerHome{
+.footer .flexContainerFooter{
     display: flex;
     gap: 1.3em;
     height: 0em;
-
+    margin-bottom: 3em;
 }
 
-.footer .flexContainerHome img{
+.footer .flexContainerFooter img{
     width: 2em;
 }
 
-.footer .flexContainerHome p{
+.footer .flexContainerFooter p{
     margin-top: 2em;
 }
 
@@ -255,6 +279,7 @@ h3 {
   
 h4 {
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .navbarDark{
@@ -263,7 +288,6 @@ h4 {
     display: flex;
     align-items: center;
     color: #f3f3f3;
-
 }
 
 
@@ -567,7 +591,7 @@ margin-bottom: 0.3em;
 
 .contactForm{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 
 .contactMessage{
@@ -586,13 +610,13 @@ margin-bottom: 0.3em;
 }
 
 .contactInput input{
-    background-color: rgb(255, 246, 207);
+    background-color: rgb(236, 236, 236);
     border: 2px gray solid;
     padding: 1em 1em 1em 0.5em;
     border-radius: .4em;
     outline: none;
 
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 100%;
 }
 
@@ -603,13 +627,13 @@ margin-bottom: 0.3em;
     border-radius: .4em;
     outline: none;
 
-    font-size: 1.2em;
+    font-size: 1.1em;
     /* width: 100%; */
 }
 
 .contactInfo{
     border-radius: .6em;
-    border: #fbae42 3px dashed;
+    border: #fbae42 3px solid;
     padding: 25% 1em 1em 10%;
     color: white;
     background-color: #1b1b1b;
@@ -762,12 +786,14 @@ fieldset:focus-within{
       font-size: var(--fs-28);
       font-weight: var(--fw-6);
       color: var(--onyx);
-      border-bottom: 1px solid var(--gainsboro);
+      border-bottom: 2px solid var(--orange);
+      margin-top: 1em;
       padding: 20px var(--px);
       display:     flex;
       align-items: center;
       gap: 20px;
     }
+   
     
     .heading ion-icon { font-size: 40px; }
     
@@ -779,8 +805,9 @@ fieldset:focus-within{
     /* checkout section style */
     .checkout {
       width: 70%;
-      padding: 40px var(--px);
+      /* padding: 40px var(--px); */
       /* background: var(--white); */
+      padding-right: 2em;
       border-right: 1px solid var(--gainsboro);
     }
     
@@ -1034,3 +1061,38 @@ fieldset:focus-within{
     .expire-date .input-flex { flex-direction: row; }
   }
 
+/* citations */
+#citations p {
+    color:#4f4f4f;
+    text-align: left;
+    padding: 8px 25px;
+  }
+  
+  #citations a {
+    color: #517894;
+  }
+  
+  #citations a:hover {
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+  }
+  
+  #citations a:focus {
+    background-color: #517894;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #citations strong {
+    color: #1e1e1e;
+  }
+/* end of citations */
+
+#idea h3{
+    margin-bottom:1em;
+}
+
+#idea p{
+    letter-spacing: 0em;;
+}

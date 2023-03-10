@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" type="image/x-icon" href="/img/Logo2.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo2.png">
     <title>Style Guide - HIVE CAFE</title>
 </head>
 <body>
     <div class="pageContent">
             <!-- nav bar of cafe website -->
     <div class="navbarLight">
-        <img src="/img/logo.png" alt="" class="logo">
+        <a href="styleGuide.html" class="logo" ><img src="img/logo.png" alt="cake"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a  href="menu.html">Menu</a></li> 
-                <li><a  href="ContactUs.html">Contact Us</a></li> 
-                <li><a href="checkout.html"><img src="/img/checkout.png" alt="cart" class="cart"></a></li> 
+                <li><a  href="contact.html">Contact Us</a></li> 
+                <li><a href="checkout.html"><ion-icon name="cart-outline"></ion-icon></a></li> 
                 </li>
               </ul>
         </nav>
@@ -48,143 +48,120 @@
     </section>
 
     <!-- HTML elements // -->
-    <!-- branding idea -->
-    <!-- <section id="idea">
-        <h2>What does the company do, or offer?</h2>
-        <p>Hive Cafe is a coffee shop that offers a variety of coffee, tea, and other beverages, as well as a selection of baked goods, pastries, and light snacks. The company is dedicated to providing high-quality coffee and food, as well as creating a warm and welcoming atmosphere for its customers.</p> 
-        <p>In addition to its menu offerings, Hive Cafe also places a strong emphasis on sustainability and ethical sourcing. They may source their coffee beans directly from small-scale farmers, or use only organic and fair-trade ingredients in their menu items.</p>
-        <p>Visitors to Hive Cafe can enjoy their beverages and food in a comfortable and relaxed setting, whether they're grabbing a quick bite on the go or settling in for a longer visit. The coffee shop is a popular gathering place for friends, family, and community members, and provides a space for people to connect and socialize over a cup of coffee or a light meal. </p>
-        <h2>Who is the company to potential customers?(as a person)</h2>
-        <p>Hive Cafe's potential customers are individuals who enjoy a good cup of coffee or a light meal in a comfortable and inviting atmosphere. This includes people from a variety of age groups and backgrounds, such as students, professionals, families, and retirees.</p>
-        <p>Potential customers may be looking for a place to grab a quick bite on the go, meet with friends or colleagues, or simply relax and enjoy a cup of coffee or tea. They may be attracted to Hive Cafe's commitment to sustainability and ethical sourcing, as well as its diverse menu offerings.</p>
-        <p>In short, Hive Cafe's potential customers are people who appreciate good food and drinks, a warm and welcoming atmosphere, and a commitment to sustainability and ethical sourcing. They may be coffee connoisseurs or casual drinkers, foodies or those simply looking for a light bite, but they are all looking for a high-quality experience that they can enjoy in a relaxed and comfortable setting.</p>
-        <h2>Why might this company entice someone to purchase a product or service?</h2>
-        <h4>High-quality menu offerings:</h3>
-        <p>Hive Cafe offers a variety of delicious coffee, tea, and other beverages, as well as baked goods and light snacks made with high-quality ingredients. This can entice customers who are looking for a great-tasting cup of coffee or a satisfying snack.</p>
-        <h4>Warm and welcoming atmosphere:</h3>
-        <p>Hive Cafe creates a relaxed and inviting atmosphere, making it a great place for customers to unwind and socialize with friends or colleagues. This can entice people who are looking for a comfortable and enjoyable experience.</p>
-        <h4>Convenient location:</h3>
-        <p>Hive Cafe may be located in a convenient area, making it easily accessible for customers who are on the go or in the neighborhood.</p>
-    </section> -->
 
-    <div class="branding">
-        
-    </div>
     <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <h2 class="sectionHeader">Interactive Elements</h2>
-    <div class="gridContainer">
-         <!-- In-Text Link -->
-         <section class="gridElement">
-            <h3>In-text link</h3>
-            <h4>CSS selector:</h4>
-            <p>.element1 a</p>
-            <h4>Sample code:</h4>
-            <code>&lt;a href="https://www.instagram.com/hive.cafe/"&gt;@hive.cafe&lt;/a&gt;</code>
-            <h4>Rendered element:</h4>
-            <a href="https://www.instagram.com/hive.cafe/">@hive.cafe</a>
-        </section>
 
-        <!-- Default Button styling section -->
-        <section class="gridElement">
-            <h3>Navigation Link</h3>
-            <h4>CSS selector:</h4>
-            <p>.button-nav</p>
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="navLink"&gt;Default Button&lt;/a&gt;</code>
-            <h4>Rendered element:</h4>
-            <a href="index.html" class="navLink">Home</a>
-        </section>
-
-        <!-- Submit/Reset Buttons -->
-        <section class="gridElement">
-            <section class="element4">
-            <h3>Submit/Reset Buttons</h3>
-            <h4>CSS selector:</h4>
-            <p>.rs_button</p>
-            <h4>Sample code:</h4>
-            <code>&lt;from action="rs_button"&gt;<br>
-                &lt;a class="button-nav" href="#"&gt;Reset!&lt;/a&gt;<br>
-                &lt;br&gt;<br>
-                &lt;a class="button-nav" href="#"&gt;Submit&lt;/a&gt;<br>
-                &lt;/form&gt;</code>
-            <h4>Rendered element:</h4>
-            <form action="rs_button">
-                <button class="submitButton" >Submit</button>
-                
-                <button class="resetButton" >Reset</button>
-            </form>
-            </section>
-        </section>
-
-        <!-- Text Input -->
-        <section class="gridElement">
-            <section class="element4">
-            <h3>Text Input Field with Label</h3>
-            <h4>CSS selector:</h4>
-            <p>input[type=search]</p>
-            <h4>Sample code:</h4>
-            <code>&lt;from&gt;<br>
-                &lt;fieldset class="info"&gt;<br>
-                &lt;input type="search" placeholder="Search..."&gt;<br>
-                &lt;/fieldest&gt;<br>
-                &lt;/form&gt;</code>
-            <h4>Rendered element:</h4>
-            <form>
-                <fieldset class="info">
-                <input type="search" placeholder="Search...">
-                </fieldset>
-            </form>
-            </section>
-        </section>
-
-        <!-- Radio Button with Label -->
-        <section class="gridElement">
-            <section class="element4">
-            <h3>Radio Button with Label</h3>
-            <h4>CSS selector:</h4>
-            <p>.radio</p>
-            <h4>Sample code:</h4>
-            <code>&lt;label class="radio"&gt;This is button 1<br>
-                &lt;input type="radio" checked="checked" name="radio"&gt;<br>
-                &lt;span class="checkmark"&gt;&lt;/span&gt;<br>
-                &lt;/label&gt;<br>
-                &lt;label class="radio"&gt;This is button 2<br>
-                &lt;input type="radio" name="radio"&gt;<br>
-                &lt;span class="checkmark"&gt;&lt;/span&gt;<br>
-                &lt;/label&gt;</code>
-            <h4>Rendered element:</h4>
-            <label class="radio">This is button 1
-                <input type="radio" checked="checked" name="radio">
-                <span class="checkmark"></span>
-            </label>
-            <label class="radio">This is button 2
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>
-            </label>
-            </section>
-        </section>
-
-        <!-- An Image as a Link -->
-        <section class="gridElement">
-            <section class="element4">
-            <h3>Image as a Link</h3>
-            <h4>CSS selector:</h4>
-            <p>.element3 a</p>
-            <h4>Sample code:</h4>
-            <code>&lt;a href="https://www.instagram.com/hive.cafe/"&gt;&lt;img src="img/cake1.png" alt="SocialMedia"&gt;&lt;/a&gt;</code>
-            <h4>Rendered element:</h4>
-            <a href="https://www.instagram.com/hive.cafe/"><img src="/img/cake1.png" alt="SocialMedia"></a>
-            </section>
-        </section>
-    </div>
     <section id="interactive_elements" >
-       
-
-       
+        <h2 class="sectionHeader" >Interactive Elements</h2>
+        <div class="gridContainer" id="interactive_elements" >
+             <!-- In-Text Link -->
+             <section class="gridElement">
+                <h3>In-text link</h3>
+                <h4>CSS selector:</h4>
+                <p>.element1 a</p>
+                <h4>Sample code:</h4>
+                <code>&lt;a href="https://www.instagram.com/hive.cafe/"&gt;@hive.cafe&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <a href="https://www.instagram.com/hive.cafe/">@hive.cafe</a>
+            </section>
+    
+            <!-- Default Button styling section -->
+            <section class="gridElement">
+                <h3>Navigation Link</h3>
+                <h4>CSS selector:</h4>
+                <p>.button-nav</p>
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="navLink"&gt;Default Button&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <a href="index.html" class="navLink">Home</a>
+            </section>
+    
+            <!-- Submit/Reset Buttons -->
+            <section class="gridElement">
+                <section class="element4">
+                <h3>Submit/Reset Buttons</h3>
+                <h4>CSS selector:</h4>
+                <p>.rs_button</p>
+                <h4>Sample code:</h4>
+                <code>&lt;from action="rs_button"&gt;<br>
+                    &lt;a class="button-nav" href="#"&gt;Reset!&lt;/a&gt;<br>
+                    &lt;br&gt;<br>
+                    &lt;a class="button-nav" href="#"&gt;Submit&lt;/a&gt;<br>
+                    &lt;/form&gt;</code>
+                <h4>Rendered element:</h4>
+                <form action="rs_button">
+                    <button class="submitButton" >Submit</button>
+                    
+                    <button class="resetButton" >Reset</button>
+                </form>
+                </section>
+            </section>
+    
+            <!-- Text Input -->
+            <section class="gridElement">
+                <section class="element4">
+                <h3>Text Input Field with Label</h3>
+                <h4>CSS selector:</h4>
+                <p>input[type=search]</p>
+                <h4>Sample code:</h4>
+                <code>&lt;from&gt;<br>
+                    &lt;fieldset class="info"&gt;<br>
+                    &lt;input type="search" placeholder="Search..."&gt;<br>
+                    &lt;/fieldest&gt;<br>
+                    &lt;/form&gt;</code>
+                <h4>Rendered element:</h4>
+                <form>
+                    <fieldset class="info">
+                    <input type="search" placeholder="Search...">
+                    </fieldset>
+                </form>
+                </section>
+            </section>
+    
+            <!-- Radio Button with Label -->
+            <section class="gridElement">
+                <section class="element4">
+                <h3>Radio Button with Label</h3>
+                <h4>CSS selector:</h4>
+                <p>.radio</p>
+                <h4>Sample code:</h4>
+                <code>&lt;label class="radio"&gt;This is button 1<br>
+                    &lt;input type="radio" checked="checked" name="radio"&gt;<br>
+                    &lt;span class="checkmark"&gt;&lt;/span&gt;<br>
+                    &lt;/label&gt;<br>
+                    &lt;label class="radio"&gt;This is button 2<br>
+                    &lt;input type="radio" name="radio"&gt;<br>
+                    &lt;span class="checkmark"&gt;&lt;/span&gt;<br>
+                    &lt;/label&gt;</code>
+                <h4>Rendered element:</h4>
+                <label class="radio">This is button 1
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio">This is button 2
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                </section>
+            </section>
+    
+            <!-- An Image as a Link -->
+            <section class="gridElement">
+                <section class="element4">
+                <h3>Image as a Link</h3>
+                <h4>CSS selector:</h4>
+                <p>.element3 a</p>
+                <h4>Sample code:</h4>
+                <code>&lt;a href="https://www.instagram.com/hive.cafe/"&gt;&lt;img src="img/cake1.png" alt="SocialMedia"&gt;&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <a href="https://www.instagram.com/hive.cafe/"><img src="img/cake1.png" alt="SocialMedia"></a>
+                </section>
+            </section>
+        </div>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-    <h2 class="sectionHeader">Colour Palette</h2>
+    <h2 class="sectionHeader" >Colour Palette</h2>
     <div class="colours">
        
         <div>
@@ -308,7 +285,7 @@
         <!-- Main Navigation -->
         <h3 class="sectionHeader">Navigation Bar</h3>
         <div class="navbarShow">
-            <img src="/img/logo.png" alt="" class="logo">
+            <img src="img/logo.png" alt="" class="logo">
             
             <nav>
                 <ul>
@@ -329,25 +306,25 @@
             <h3 class="sectionHeader">Menu</h3>
             <div class="menu">
                 <div class="listing">
-                    <a class="checkout" href="hot_latte.html"><img src="/img/hot_latte.png" alt="hot_latte"></a>
+                    <a class="checkout" href="hot_latte.html"><img src="img/hot_latte.png" alt="hot_latte"></a>
                     <p>Hot Latte</p>
                     <p class="price">$6.00</p>
 
                 </div>
                 <div class="listing">
-                    <a class="checkout" href="caramel_latte.html"><img src="/img/caramel_latte.png" alt="hot_latte"></a>
+                    <a class="checkout" href="caramel_latte.html"><img src="img/caramel_latte.png" alt="hot_latte"></a>
                     <p>Caramel Latte</p>
                     <p class="price">$6.25</p>
 
                 </div>
                 <div class="listing">
-                    <a class="checkout" href="cake1.html"><img src="/img/cake1.png" alt="cake"></a>
+                    <a class="checkout" href="cake1.html"><img src="img/cake1.png" alt="cake"></a>
                     <p>Carrot Cake</p>
                     <p class="price">$7.25</p>
 
                 </div>
                 <div class="listing">
-                    <a class="checkout" href="cake2.html"><img src="/img/cake2.png" alt="cake"></a>
+                    <a class="checkout" href="cake2.html"><img src="img/cake2.png" alt="cake"></a>
                     <p>Honeycomb Cake</p>
                     <p class="price">$8.00</p>
 
@@ -361,7 +338,7 @@
             <h3 class="sectionHeader">Product Listing</h3>
             <div class="productListing">
                 <section class="image">
-                    <img src="/img/hot_latte.png" alt="hot_latte">
+                    <img src="img/hot_latte.png" alt="hot_latte">
                 </section>
                 <section class="productDetails">
                     <h1 class="header">Hot Latte</h1>
@@ -505,6 +482,187 @@
         </section>
     </section> -->
 
+    <!--Checkout Cart-->
+    <!--Source: https://www.youtube.com/watch?v=-gEV3znqu8E -->
+    <!--main container-->
+    <main class="container">
+
+        <h3 class="sectionHeader">
+        <ion-icon name="cart-outline"></ion-icon> Checkout Cart
+        </h3>
+
+        <div class="item-flex">
+
+        <!--checkout section-->
+        <section class="checkout">
+
+            <h2 class="section-heading">Payment Details</h2>
+
+            <!--payment form-->
+            <div class="payment-form">
+            <div class="payment-method">
+                <button class="method selected">
+                <ion-icon name="card"></ion-icon>
+                <span>Credit Card</span>
+                <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+                </button>
+            </div>
+            
+            <form action="#">
+                <!--address-->
+                <div class="address">
+                <label for="address" class="label-default">Address</label>
+                <input type="text" name="address" id="address" class="input-default">
+                </div>
+
+                <!--Cardholder name-->
+                <div class="cardholder-name">
+                <label for="cardholder-name" class="label-default">Cardholder name</label>
+                <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
+                </div>
+
+                <!--Card number-->
+                <div class="card-number">
+                <label for="card-number" class="label-default">Card number</label>
+                <input type="number" name="card-number" id="card-number" class="input-default">
+                </div>
+                
+                <!--Expiration date-->
+                <div class="input-flex">
+                <div class="expire-date">
+                    <label for="expire-date" class="label-default">Expiration date</label>
+                    <div class="input-flex">
+                    <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
+                        class="input-default">
+                        /
+                    <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
+                        class="input-default">
+                    </div>
+                </div>
+
+                <!--CVV-->
+                <div class="cvv">
+                    <label for="cvv" class="label-default">CVV</label>
+                    <input type="number" name="cvv" id="cvv" class="input-default">
+                </div>
+                </div>
+            </form>
+            </div>
+
+            <!--Order Button-->
+            <button class="btn btn-primary">
+            <b>Place Order</b> $ <span id="payAmount">12.37</span>
+            </button>
+        </section>
+
+        <!--cart section-->
+        <section class="cart">
+
+            <div class="cart-item-box">
+            <h2 class="section-heading">Order Summary</h2>
+
+            <!--product1-->
+            <div class="product-card">
+                <div class="card">
+                <div class="img-box">
+                    <img src="img/hot_latte.png" alt="hot latte" width="80px" class="product-img">
+                </div>
+                <div class="detail">
+                    <h4 class="product-name">Hot Latte</h4>
+                    <div class="wrapper">
+                    <div class="product-qty">
+                        <button id="decrement">
+                        <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+                        <span id="quantity">1</span>
+                        <button id="increment">
+                        <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="price">
+                        $ <span id="price">6.00</span>
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+
+            <!--product2-->
+            <div class="product-card">
+                <div class="card">
+                <div class="img-box">
+                    <img src="img/caramel_latte.png" alt="caramel latte" width="80px" class="product-img">
+                </div>
+                <div class="detail">
+                    <h4 class="product-name">Caramel Latte</h4>
+                    <div class="wrapper">
+                    <div class="product-qty">
+                        <button id="decrement">
+                        <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+                        <span id="quantity">1</span>
+                        <button id="increment">
+                        <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="price">
+                        $ <span id="price">6.25</span>
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+
+            
+            <div class="wrapper">
+
+            <!--Discount code-->
+            <div class="discount-token">
+                <label for="discount-token" class="label-default">Gift card/Discount code</label>
+                <div class="wrapper-flex">
+                <input type="text" name="discount-token" id="discount-token" class="input-default">
+                <button class="btn btn-outline">Apply</button>
+                </div>
+            </div>
+
+            <!--Amount-->
+            <div class="amount">
+
+                <div class="subtotal">
+                <span>Subtotal</span> <span>$ <span id="subtotal">2.05</span></span>
+                </div>
+
+                <div class="tax">
+                <span>Tax</span> <span>$ <span id="tax">0.10</span></span>
+                </div>
+
+                <div class="total">
+                <span>Total</span> <span>$ <span id="total">2.15</span></span>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        </div>
+    </main> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- branding components -->
     <!-- <section id="components">
         <h2>Branding Components</h2>
@@ -548,11 +706,31 @@
             <img src="img/logo.png" alt="Vegan_Lemologon_Loaf" style="width:50%">
            
         </section> -->
+            <!-- branding idea -->
+    <section id="idea">
+        <h3 class="sectionHeader">Branding Idea</h3>
+        <h3>What does the company do, or offer?</h3>
+        <p>Hive Cafe is a coffee shop that offers a variety of coffee, tea, and other beverages, as well as a selection of baked goods, pastries, and light snacks. The company is dedicated to providing high-quality coffee and food, as well as creating a warm and welcoming atmosphere for its customers.</p> 
+        <p>In addition to its menu offerings, Hive Cafe also places a strong emphasis on sustainability and ethical sourcing. They may source their coffee beans directly from small-scale farmers, or use only organic and fair-trade ingredients in their menu items.</p>
+        <p>Visitors to Hive Cafe can enjoy their beverages and food in a comfortable and relaxed setting, whether they're grabbing a quick bite on the go or settling in for a longer visit. The coffee shop is a popular gathering place for friends, family, and community members, and provides a space for people to connect and socialize over a cup of coffee or a light meal. </p>
+        <br><h3>Who is the company to potential customers?(as a person)</h3>
+        <p>Hive Cafe's potential customers are individuals who enjoy a good cup of coffee or a light meal in a comfortable and inviting atmosphere. This includes people from a variety of age groups and backgrounds, such as students, professionals, families, and retirees.</p>
+        <p>Potential customers may be looking for a place to grab a quick bite on the go, meet with friends or colleagues, or simply relax and enjoy a cup of coffee or tea. They may be attracted to Hive Cafe's commitment to sustainability and ethical sourcing, as well as its diverse menu offerings.</p>
+        <p>In short, Hive Cafe's potential customers are people who appreciate good food and drinks, a warm and welcoming atmosphere, and a commitment to sustainability and ethical sourcing. They may be coffee connoisseurs or casual drinkers, foodies or those simply looking for a light bite, but they are all looking for a high-quality experience that they can enjoy in a relaxed and comfortable setting.</p>
+        <br><h3>Why might this company entice someone to purchase a product or service?</h3>
+        <h4>High-quality menu offerings:</h4>
+        <p>Hive Cafe offers a variety of delicious coffee, tea, and other beverages, as well as baked goods and light snacks made with high-quality ingredients. This can entice customers who are looking for a great-tasting cup of coffee or a satisfying snack.</p>
+        <h4>Warm and welcoming atmosphere:</h3>
+        <p>Hive Cafe creates a relaxed and inviting atmosphere, making it a great place for customers to unwind and socialize with friends or colleagues. This can entice people who are looking for a comfortable and enjoyable experience.</p>
+        <h4>Convenient location:</h3>
+        <p>Hive Cafe may be located in a convenient area, making it easily accessible for customers who are on the go or in the neighborhood.</p>
     </section>
+    </section>
+    
     
     <!-- Citations -->
     <section id="citations">
-        <h1>Citations</h1>
+        <h3 class="sectionHeader">Citations</h3>
         <P>The Boardroom espresso roast by @palletcoffee <strong>[Image]]</strong>. Retrieved from <a href="https://www.facebook.com/HiveCafeNewWest/photos/pb.100033841465564.-2207520000./205109043419929/?type=3">https://www.facebook.com/HiveCafeNewWest/photos/pb.100033841465564.-2207520000./205109043419929/?type=3</a></p>
         <P>There’s something magical about coffee. <strong>[Image]]</strong>. Retrieved from <a href="https://www.facebook.com/HiveCafeNewWest/photos/pb.100033841465564.-2207520000./219214415342725/?type=3">https://www.facebook.com/HiveCafeNewWest/photos/pb.100033841465564.-2207520000./219214415342725/?type=3</a></p> 
         <P>The season of iced drinks is upon us! <strong>[Image]]</strong>. Retrieved from <a href="https://www.facebook.com/HiveCafeNewWest/photos/pb.100033841465564.-2207520000./217777658819734/?type=3">https://www.facebook.com/HiveCafeNewWest/photos/pb.100033841465564.-2207520000./217777658819734/?type=3</a></p>
@@ -578,10 +756,11 @@
         <P>HIVE CAFE logo<strong>[Image]]</strong>. Retrieved from <a href="https://www.facebook.com/photo/?fbid=656294925508550&set=a.656294882175221">https://www.facebook.com/photo/?fbid=656294925508550&set=a.656294882175221</a></p>                      
         <P>Responsive Shopping cart for eCommerce website HTML CSS JS. Retrieved from <a href="https://www.youtube.com/watch?v=-gEV3znqu8E">https://www.youtube.com/watch?v=-gEV3znqu8E</a></p>
         </section>
+        <br><br><hr>
 
     <!--footer-->
     <div class="footer">
-        <div class="flexContainerHome">
+        <div class="flexContainerFooter">
             <a  href="https://www.facebook.com/HiveCafeNewWest"><img src="img/facebook.png" width="20px" alt="facebook"></a>
             <a  href="https://www.instagram.com/hive.cafe/"><img src="img/ig_icon.png" width="20px" alt="instagram"></a>
         </div>

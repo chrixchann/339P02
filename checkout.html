@@ -14,17 +14,17 @@
     <!-- nav bar of cafe website -->
     <div class="pageContent">
         <div class="navbarLight">
-            <img src="/img/logo.png" alt="" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a  href="menu.html">Menu</a></li> 
-                    <li><a  href="contact.html">Contact Us</a></li> 
-                    <li><a href="checkout.html"><img src="img/checkout.png" alt="cart" class="cart"></a></li> 
-                    </li>
-                  </ul>
-            </nav>
+          <a href="styleGuide.html" class="logo" ><img src="img/logo.png" alt="cake"></a>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a  href="menu.html">Menu</a></li> 
+                  <li><a  href="contact.html">Contact Us</a></li> 
+                  <li><a href="checkout.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                  </li>
+                </ul>
+          </nav>
     
         </div>
     </div>
@@ -33,11 +33,9 @@
   <!--Checkout Cart-->
   <!--Source: https://www.youtube.com/watch?v=-gEV3znqu8E -->
   <!--main container-->
-  <main class="container">
+  <section id="checkout">
 
-    <h1 class="heading">
-      <ion-icon name="cart-outline"></ion-icon> Checkout Cart
-    </h1>
+    <h3 class="sectionHeader"><ion-icon name="cart-outline"></ion-icon> Checkout Cart </h3>
 
     <div class="item-flex">
 
@@ -52,7 +50,7 @@
             <button class="method selected">
               <ion-icon name="card"></ion-icon>
               <span>Credit Card</span>
-              <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+              <!-- <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon> -->
             </button>
           </div>
           
@@ -195,17 +193,18 @@
       </section>
 
     </div>
-  </main> 
+    <br><br><hr>
+  </section> 
 
   <!--footer-->
   <div class="footer">
-    <div class="flexContainerHome">
+    <div class="flexContainerFooter">
         <a  href="https://www.facebook.com/HiveCafeNewWest"><img src="img/facebook.png" width="20px" alt="facebook"></a>
         <a  href="https://www.instagram.com/hive.cafe/"><img src="img/ig_icon.png" width="20px" alt="instagram"></a>
     </div>
     <img src="img/footer_logo.png" width="60px" alt="logotype">
     <p><br>All Rights Reserved. By Chris Chan and Christy Lam</p>
-  </div>
+</div>
 
   <!--custom js link-->
   <script src="./script.js"></script>
