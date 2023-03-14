@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" type="image/x-icon" href="/img/Logo2.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo2.png">
 
     <title>Contact - HIVE CAFE</title>
 </head>
@@ -14,19 +14,70 @@
     <!-- nav bar of cafe website -->
     <div class="pageContent">
         <div class="navbarLight">
-            <img src="/img/logo.png" alt="" class="logo">
+            <a href="styleGuide.html" class="logo" ><img src="img/logo.png" alt="cake"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a  href="menu.html">Menu</a></li> 
                     <li><a  href="contact.html">Contact Us</a></li> 
-                    <li><a href="checkout.html"><img src="/img/checkout.png" alt="cart" class="cart"></a></li> 
+                    <li><a href="checkout.html"><ion-icon name="cart-outline"></ion-icon></a></li> 
                     </li>
                   </ul>
             </nav>
     
         </div>
     </div>
+
+    <!-- contact us -->
+    <section id="contact">
+        <h3 class="sectionHeader">Contact Us</h3>
+        <div class="contactForm">
+            <div class="contactInfo">
+                <h2>We want to hear from you!</h2>
+                <h3>Contact us at:</h3>
+                <p>+1 (778)513-7021</p>
+                <p>cafe@hive.city</p>
+            </div>
+            <div class="contactMessage">
+                <section class="form">
+                    <form action="index.html">
+                        <div class="contactInput">    
+                            <label><b>First Name</b><br>
+                            <input type="contact-text" name="First Name" value="First Name" placeholder="First Name"></label>
+                            <label><b>Last Name</b><br>
+                            <input type="contact-text" name="lastname" value="Last Name" placeholder="Last Name"></label>
+                            <label><b>Email</b><br>
+                            
+                            <input type="contact-text" placeholder="Email"></label>
+                            <label><b>Subject</b><br>
+                            <input type="contact-text" placeholder="Subject"></label>
+                            <label><b>Message</b><br>
+                            <input type="contact-text" placeholder="Message"></label>
+                            <button class="button-nav" onclick="location.href='product.html';" value="back to product">Submit</button>
+                        </div>
+
+                    </form>
+                </section>
+            </div>
+
+        </div>
+        <br><br><hr>
+    </section>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="flexContainerFooter">
+            <a  href="https://www.facebook.com/HiveCafeNewWest"><img src="img/facebook.png" width="20px" alt="facebook"></a>
+            <a  href="https://www.instagram.com/hive.cafe/"><img src="img/ig_icon.png" width="20px" alt="instagram"></a>
+        </div>
+        <img src="img/footer_logo.png" width="60px" alt="logotype">
+        <p><br>All Rights Reserved. By Chris Chan and Christy Lam</p>
+    </div>
+
+
+    <!--ionicon link-->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
