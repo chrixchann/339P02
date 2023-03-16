@@ -16,7 +16,7 @@ body{
     width: 100%;
     height: 100%;
     /* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
-    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(/img/Desktop\ -\ 9.png);
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(img/Desktop9.png);
     background-position: center;
     background-size: cover;
 }
@@ -25,7 +25,7 @@ body{
     width: 100%;
     height: 100%;
     /* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
-    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(/img/aboutus.png);
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(img/aboutus.png);
     background-position: center;
     background-size: cover;
 }
