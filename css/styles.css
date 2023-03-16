@@ -11,44 +11,43 @@ body{
     height: 100vh;
 }
 
+
 .homeHeader{
     width: 100%;
-    height: 50rem;
+    height: 100%;
     /* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
-    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(img/Desktop\ -\ 9.png);
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(/img/Desktop\ -\ 9.png);
     background-position: center;
     background-size: cover;
 }
 
 .aboutHeader{
     width: 100%;
-    height: 53rem;
+    height: 100%;
     /* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
-    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(img/aboutus.png);
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0)), url(/img/aboutus.png);
     background-position: center;
     background-size: cover;
+}
+
+.homeHeader .pageContent{
+    height: 100%;
+    
 }
 
 .column{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin-right: 3em;
 }
 
-.map{
-    margin-left: auto;
-    
-}
 
-.map img{
-    width: 40rem;    
-    border-radius: 1rem;
-}
 
 .pageContent, #contact, #checkout{
     padding-left: 8%;
     padding-right: 8%;
-    
+
 }
 
 .sectionHeader{
@@ -66,25 +65,29 @@ body{
     align-items: flex-end;
     flex-wrap: wrap;
     margin-bottom: 6.6em; 
+    padding-bottom: 3em;
     
 }
+
 .flexContainerAbout h2{
     font-weight: 900;
     font-size: 3rem;
 
 }
 
+
 .flexContainerHome{
     display: flex;
-    height: 38em;
+    height: 75%;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    /* padding-bottom: em; */
+    /* margin-bottom: 4em; */
 }
 
 .flexContainerHome1{
     display: flex;
-    height: em;
+    /* height: em; */
     align-items: flex-end;
     flex-wrap: wrap;
     margin-bottom: 12em;
@@ -112,9 +115,6 @@ body{
     color: white;
 }
 
-.flexElementHome p{
-    letter-spacing: 0;
-}
 
 .flexElementHome1 p{
     letter-spacing: 0;
@@ -124,18 +124,19 @@ body{
 .flexElementHome h2{
     padding-bottom: .2em;
 }
-
-.flexElementHome1 h2{
+.flexElementHome h3{
     padding-bottom: .2em;
 }
 
+
 .flexContainerLight{
     display: flex;
-    height: 32em;
+    height: fit-content;
     flex-wrap: wrap;
     color: black;
     align-items: center;
 }
+
 
 .flexContainerLight .flexElementHome{
     flex-basis: 40%;
@@ -154,15 +155,20 @@ body{
 
 .flexContainerLight .flexElement2Home img{
     flex-basis: 50%;
+    max-height: 100%;
+    max-width: fit-content;
+    /* min-height: 100%; */
+    /* min-width: auto; */
 }
 
 .flexContainerDark .pageContent{
     display: flex;
-    height: 25em;
+    height: fit-content;
     flex-wrap: wrap;
     color: white;
     align-items: center;
     background-color: #1b1b1b;
+
 }
 
 .flexContainerDark .pageContent .flexElementHome{
@@ -183,15 +189,21 @@ body{
 
 .flexContainerDark .pageContent .flexElement2Home img{
     flex-basis: 50%;
+    max-height: 100%;
+    max-width: fit-content;
+
+    /* min-height: 100%; */
+
 }
 
 .flexContainerIG{
     display: flex;
-    height: 40em;
+    max-height: 100%;
     flex-wrap: wrap;
     color: black;
     align-items: center;
     border-bottom: #939499 solid 1px;
+    margin-top: 2.5em;
 }
 
 .flexContainerIG .flexElementHome{
@@ -201,7 +213,7 @@ body{
 
 .flexContainerIG .flexElementHome .yellowHighlight{
     color: #fbae42;
-    font-size: 2rem;
+    font-size: 3em;
 }
 
 
@@ -211,10 +223,12 @@ body{
     grid-gap: 10px;
     flex-basis: 50%; 
     width: 10%;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 .igImage img{
-    height: auto;
+    /* height: auto; */
     width: 100%;
     
 }
@@ -283,14 +297,29 @@ h4 {
 }
 
 .navbarDark{
-    padding-top: 1em;
+    padding-top: 2em;
     height: 15%;
     display: flex;
     align-items: center;
     color: #f3f3f3;
 }
 
+.navbarLight a.active {
+    /* background-color: #04AA6D; */
+    color:#fbae42;
+  }
 
+  .navbarDark a.active {
+    /* background-color: #04AA6D; */
+    color:#fbae42;
+  }
+  
+.navbarDark a.icon {
+    font-size: 1.5em;
+    display: none;
+    margin-left: 1em;
+    /* padding-bottom: .4em; */
+}
 .navbarLight{
     padding-top: 1em;
     height: 15%;
@@ -298,6 +327,13 @@ h4 {
     align-items: center;
     color: #1b1b1b;
 
+}
+
+.navbarLight a.icon {
+    font-size: 1.5em;
+    display: none;
+    margin-left: 1em;
+    /* padding-bottom: .4em; */
 }
 
 .navbar2{
@@ -353,7 +389,6 @@ nav ul li a{
     list-style: none;
     display: inline-block;
     margin-right: 1em;
-
     margin-bottom: 1em;
 }
 .navbar2 ul li button{
@@ -642,6 +677,7 @@ margin-bottom: 0.3em;
 
 .contactInfo h2{
     margin-top: 0;
+    margin-bottom: 4em;
 
 }
 
@@ -651,7 +687,13 @@ nav ul li a:hover{
     color: #fbae42;
     /* font-weight: 600; */
 }
-.gridElement .navLink:hover{
+
+nav ul a:hover{
+    /* text-decoration: underline; */
+    color: #fbae42;
+    /* font-weight: 600; */
+}
+.gridElement .navLink:hover, .yellowHighlight:hover{
     text-decoration: underline;
     color: #fbae42;
     /* font-weight: 600; */
@@ -674,10 +716,24 @@ fieldset:focus-within{
     border: 2px #fbae42 solid;
 }
 
- img:hover{
+ /* img:hover{
     opacity: .5;
+} */
+
+.map{
+    margin-left: auto;
+    /* width: auto; */
+    width: 60%;
+
+    
 }
 
+.map img{
+    border-radius: 1rem;
+    width: 100%;
+    max-height: 80%;
+
+}
 
 
 
@@ -1019,13 +1075,17 @@ fieldset:focus-within{
     
 /* RESPONSIVE */
 @media (max-width: 1200px) {
-    .item-flex { flex-direction: column-reverse; }
+    .item-flex { 
+        flex-direction: column-reverse; 
+    }
     /* checkout section responsive */
     .checkout {
       width: 100%;
       border-right: none;
     }
-    .btn-primary { width: 100%; }
+    .btn-primary { 
+        width: 100%; 
+    }
     /* cart section responsive*/
     .cart {
       display: grid;
@@ -1033,20 +1093,134 @@ fieldset:focus-within{
       width: 100%;
       border-bottom: 1px solid var(--gainsboro);
     }
-    .cart .wrapper { margin-top: auto; }
+    .cart .wrapper { 
+        margin-top: auto; 
+    }
     .cart .cart-item-box {
       border-right: 1px solid var(--gainsboro);
       margin-bottom: 0;
     }
-    .discount-token { border-top: none; }
+    .discount-token { 
+        border-top: none; 
+    }
+
+    .flexContainerAbout {
+        margin-bottom: 6em;
+    }
+    .column{
+        flex-direction: row;
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+
+    .map{
+        margin-left: auto;
+        /* width: auto; */
+        width: 100%;
+    }
+    
+    .map img{
+        border-radius: 1rem;
+        width: 100%;
+        max-height: 80%;
+    
+    }
   }
+
   
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     :root { --px: 40px; }
     .cart { grid-template-columns: 1fr; }
     .discount-token { border-top: 1px solid var(--gainsboro); }
     .wrapper-flex { gap: 20px; }
+
+
+
+    .flexElementHome1, .flexElement1Home1{
+        flex-basis: 100%;
+    }
+
+    .navbarDark li:not(:first-child) {
+        display: none;
+    }
+
+    .navbarDark a.icon {
+      float: right;
+      display: block;
+    }
+
+    .navbarLight li:not(:first-child) {
+        display: none;
+    }
+
+    .navbarLight a.icon {
+      float: right;
+      display: block;
+    }
   }
+
+
+  @media screen and (max-width: 768px) {
+    .navbarDark.responsive {
+        position: relative;
+    }
+    
+    .navbarDark.responsive ul a.icon {
+      position: absolute;
+      right: 0em;
+      top: 2.6em;
+    }
+    
+    .homeHeader .navbarDark.responsive ul a.icon {
+      position: absolute;
+      right: 0em;
+      top: 2.9em;
+    }
+
+    .navbarDark.responsive ul{
+        margin-top: 2em;
+    }
+
+    .homeHeader .navbarDark.responsive ul{
+        margin-top: 8.8em;
+    }
+
+    .navbarDark.responsive ul li{
+      float: none;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      margin-top: .4em;
+      margin-right: 2.1em;
+    }
+
+    .navbarLight.responsive {
+        position: relative;
+    }
+    
+    .navbarLight.responsive ul a.icon {
+      position: absolute;
+      right: 0em;
+      top: 2.6em;
+    }
+    
+
+    .navbarLight.responsive ul{
+        margin-top: 3em;
+    }
+
+    .navbarLight.responsive ul li{
+      float: none;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      margin-top: .4em;
+      margin-right: 2.1em;
+    }
+
+  }
+  
+
   
 @media (max-width: 567px) {
     :root { --px: 20px; }
@@ -1059,6 +1233,62 @@ fieldset:focus-within{
     .input-flex .expire-date,
     .input-flex .cvv { width: 100%; }
     .expire-date .input-flex { flex-direction: row; }
+
+    .flexContainerLight, .flexContainerDark .pageContent{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+
+
+    .flexContainerLight .flexElementHome, .flexContainerLight .flexElementHome2{
+        flex-basis: 100%;
+    }
+
+    
+    .flexContainerLight .flexElementHome, .flexContainerLight .flexElementHome2{
+        flex-basis: 100%;
+    }
+
+    .flexContainerDark .pageContent .flexElement2Home, .flexContainerDark .pageContent .flexElementHome{
+        flex-basis: 100%
+    }
+
+    .flexContainerIG{
+        text-align: center;
+    }
+    
+    .flexContainerIG .flexElementHome{
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .igGrid{
+        flex-basis: 100%;
+    }
+
+    .contactForm{
+        grid-template-columns: 100%;
+    }
+
+    .contactInfo{
+        padding: 2em 2em 2em 2em;
+
+    }
+
+    .contactForm .contactMessage{
+        margin-top: 2em;
+        margin-left: 0;
+    }
+
+    .flexContainerAbout .flexElementHome{
+        flex-basis: 100%;
+    
+    }
+
+    .flexContainerAbout {
+        margin-bottom: 3em;
+    }
   }
 
 /* citations */

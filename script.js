@@ -86,3 +86,23 @@ const totalCalc = function () {
   payAmountBtn.textContent = total.toFixed(2);
 
 }
+
+
+// https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+function myFunction() {
+  var x = document.getElementById("myTopNav");
+  if (x.className === "navbarDark") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbarDark";
+  }
+}
+
+function myFunctionLight() {
+  var x = document.getElementById("myTopNav");
+  if (x.className === "navbarLight") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbarLight";
+  }
+}

@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/Logo2.png">
+    <script src="./script.js"></script>
+
+    <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <title>Home - HIVE CAFE</title>
 </head>
@@ -15,20 +20,20 @@
     
         <div class="homeHeader">
             <div class="pageContent">
-                <div class="navbarDark">
+                <div class="navbarDark" id="myTopNav">
                     <a href="styleGuide.html" class="logo" ><img src="img/logo.png" alt="cake"></a>
                     <nav>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html" class="active">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a  href="menu.html">Menu</a></li> 
                             <li><a  href="contact.html">Contact Us</a></li> 
                             <li><a href="checkout.html"><ion-icon name="cart-outline"></ion-icon></a></li>
-                            </li>
-                          </ul>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i></a>
+                        </ul>
                     </nav>
                 </div>
-        
                 <div class="flexContainerHome">
         
                     <div class="flexElement1Home1">
@@ -45,8 +50,10 @@
         
                     </div>
                 </div>
-
             </div>
+        </div>    
+
+            
 
             <div class="pageContent">
                 <div class="flexContainerLight">
@@ -80,7 +87,7 @@
                 <div class="flexContainerIG">
                     <div class="flexElementHome">
                         <h2>Checkout our Instagram</h2>
-                        <a class="yellowHighlight">@hive.cafe</a>
+                        <a class="yellowHighlight" href="https://www.instagram.com/hive.cafe/?hl=en">@hive.cafe</a>
                     </div>
                     <div class="igGrid">
                         <a class="igImage" ><img src="img/instagram1.png" alt="cake"></a>
@@ -108,7 +115,6 @@
                 <p><br>All Rights Reserved. By Chris Chan and Christy Lam</p>
             </div>
 
-            </div>
             <!--ionicon link-->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/Logo2.png">
+    <script src="./script.js"></script>
+
+    <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <title>Hot Latte - HIVE CAFE</title>
 </head>
 <body>
     <!-- nav bar of cafe website -->
     <div class="pageContent">
-        <div class="navbarLight">
+        <div class="navbarLight" id="myTopNav">
             <a href="styleGuide.html" class="logo" ><img src="img/logo.png" alt="cake"></a>
             <nav>
                 <ul>
@@ -22,7 +27,8 @@
                     <li><a  href="menu.html">Menu</a></li> 
                     <li><a  href="contact.html">Contact Us</a></li> 
                     <li><a href="checkout.html"><ion-icon name="cart-outline"></ion-icon></a></li>
-                    </li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunctionLight()">
+                        <i class="fa fa-bars"></i></a>
                   </ul>
             </nav>
     
